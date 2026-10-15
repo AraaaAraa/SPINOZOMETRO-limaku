@@ -1,0 +1,30 @@
+/* style.css — diseño ligero inspirado en la app original (sin Tailwind) */
+:root{--bg:#f8fafc;--card:#fff;--muted:#64748b;--primary:#0ea5a4;--accent:#06b6d4;--button:#0ea5a4}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:linear-gradient(180deg,#f0f9ff 0%, #fffbeb 100%);color:#0f172a}
+.container{max-width:900px;margin:24px auto;padding:18px}
+header{text-align:center}
+h1{font-size:28px;margin:0}
+.lead{color:var(--muted);margin-top:6px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--card);border:1px solid #e6f0f6;padding:12px;border-radius:12px}
+.small{padding:8px}
+.muted{color:var(--muted)}
+.mt-1{margin-top:12px}.mt-2{margin-top:18px}
+.center{text-align:center}
+.btn{border:1px solid #cde; background:white;padding:8px 12px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--button);color:white;border:none}
+.error{color:#dc2626}
+.input{display:block;width:100%;padding:8px;border-radius:8px;border:1px solid #e2e8f0;margin-top:6px}
+input.input-inline{width:40%}
+.resultHeader{display:flex;justify-content:space-between;align-items:center}
+.ring{width:92px;height:92px;border-radius:50%;background:conic-gradient(#16a34a 0% 0%, #d1fae5 0%);display:flex;align-items:center;justify-content:center;font-weight:700}
+.metricsGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
+.metricsGrid .metric{padding:8px;border-radius:8px;border:1px solid #e6f0f6}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#e0f2fe;color:#075985;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.history{margin-top:8px}
+.ranking{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.ranking .rank{padding:8px;border-radius:8px;text-align:center}
+.callout{border-radius:20px;padding:20px;background:linear-gradient(180deg,#e0f2fe,#fff7cc);text-align:center}
+@media(max-width:800px){.grid-2{grid-template-columns:1fr}.ranking{grid-template-columns:repeat(2,1fr)}}
