@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IEV — Energía Vital</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="./index.html">Spinozómetro</a>
+    <a href="./iev.html">IEV</a>
+    <a href="./irc.html">IRC</a>
+    <a href="./pag.html">PAG</a>
+  </nav>
+  <main class="container">
+    <h1>IEV — Energía Vital</h1>
+    <p class="muted">Cuestionario: en las últimas dos semanas</p>
+    <form id="ievForm" class="card">
+      <div id="questions"></div>
+      <div class="center mt-1">
+        <button type="submit" class="btn primary">Calcular IEV</button>
+        <button type="button" id="saveIev" class="btn">Guardar</button>
+      </div>
+      <p id="ievResult" class="mt-1"></p>
+    </form>
+  </main>
+  <script src="./js/storage.js"></script>
+  <script src="./js/lexicon.js"></script>
+  <script src="./js/iev.js"></script>
+</body>
+</html>

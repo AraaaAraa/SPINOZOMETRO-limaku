@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PAG — Potencia Activa Global</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="./index.html">Spinozómetro</a>
+    <a href="./iev.html">IEV</a>
+    <a href="./irc.html">IRC</a>
+    <a href="./pag.html">PAG</a>
+  </nav>
+  <main class="container">
+    <h1>PAG — Potencia Activa Global</h1>
+    <p class="muted">PAG = (Energía Vital × Entorno × Razón) / 100</p>
+    <form id="pagForm" class="card">
+      <label>IEV (1.00–10.00) <input type="number" step="0.01" min="1" max="10" name="iev" class="input" /></label>
+      <label>IER (1.00–10.00) <input type="number" step="0.01" min="1" max="10" name="ier" class="input" /></label>
+      <label>IRC (1.00–10.00) <input type="number" step="0.01" min="1" max="10" name="irc" class="input" /></label>
+      <div class="center mt-1"><button type="submit" class="btn primary">Calcular PAG</button> <button type="button" id="savePag" class="btn">Guardar</button></div>
+      <p id="pagResult" class="mt-1"></p>
+    </form>
+  </main>
+  <script src="./js/storage.js"></script>
+  <script src="./js/pag.js"></script>
+</body>
+</html>
